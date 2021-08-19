@@ -1,8 +1,116 @@
+
 *{
     margin: 0;
     text-decoration: none;
     padding: 0;
+    box-sizing: border-box;
 }
-h1{
+body{
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
+image.dashboard{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+img.logo{
+    margin-top: 50px;
+    width: 80px;
+    height: 20px;
+}
+img.dashboard{
+    width: 100%;
+    height: auto;
+}
+article{
+    margin-top: 20px;
+}
+input{
+    border:hsl(223, 100%, 88%) solid 1px ;
+    padding: 15px;
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+input[placeholder]{
+    opacity: 0.5;
+}
+button{
+    background-color: hsl(223, 87%, 63%);
+    padding: 15px;
+    width: 100%;
+    border:hsl(223, 87%, 63%) solid 1px ;
+    border-radius: 50px;
+    color: whitesmoke;
+    align-self: center;
+}
+button:hover{
+    border: hsl(223, 87%, 63%);
+
+    background-color:hsl(223, 100%, 88%) ;
+}
+h2 {
+    font-weight: 300;
+    margin-top: 30px;
+    color: hsl(0, 0%, 59%);
+}
+b{
+    color: black;
+}
+p{
+    color: hsl(209, 33%, 12%);
+    opacity: 80%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    /*color: dodgerblue;border: 1px solid gray; padding: 5px; width:30px; text-align: center; border-radius: 50%*/
+}
+.fa{
+    opacity: 80%;
+    color: dodgerblue;border: 1px solid gray; padding: 5px; width:30px; text-align: center; border-radius: 50%
+}
+.fa:hover{
+    color: white;
+    background-color: dodgerblue;
+}
+span{
+    opacity: 0.5;
+    font-size: 15px;
+}
+input[text].error{
+    border:2px solid hsl(354, 100%, 66%);
+}
+span.email-span{
+    margin-top: 5px;
+}
+@media only screen and (min-width: 375px) {
+input{
+    width: 500px;
+}
+    button{
+    width: 300px;
+}
 }
